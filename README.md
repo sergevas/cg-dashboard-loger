@@ -1,2 +1,2 @@
-# cg-dashboard-logger
-Connected garden Grafana data logger
+# cg-grower-device
+Connected Garden grower device services and sensor adapters
