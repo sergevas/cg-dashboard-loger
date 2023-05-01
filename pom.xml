@@ -17,6 +17,7 @@
         <java.version>11</java.version>
         <spring-boot.version>2.7.11</spring-boot.version>
         <spring-boot-thin-layout.version>1.0.28.RELEASE</spring-boot-thin-layout.version>
+        <pi4j.version>2.3.0</pi4j.version>
     </properties>
     <dependencies>
         <dependency>
@@ -50,6 +51,23 @@
             <artifactId>spring-context-indexer</artifactId>
             <version>5.3.27</version>
             <scope>optional</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.pi4j</groupId>
+            <artifactId>pi4j-core</artifactId>
+            <version>${pi4j.version}</version>
+        </dependency>
+
+        <!-- include Pi4J Plugins (Platforms and I/O Providers) -->
+        <dependency>
+            <groupId>com.pi4j</groupId>
+            <artifactId>pi4j-plugin-raspberrypi</artifactId>
+            <version>${pi4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.pi4j</groupId>
+            <artifactId>pi4j-plugin-pigpio</artifactId>
+            <version>${pi4j.version}</version>
         </dependency>
     </dependencies>
 
